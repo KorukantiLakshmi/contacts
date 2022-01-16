@@ -1,0 +1,162 @@
+[{
+    "id":"1",
+    "first_name":"lakshmi",
+    "last_name":"korukanti",
+    "type":"personal",
+    "email":"lakshmilucky6651@gmail.com",
+    "gender":"female",
+    "contact_number":"8498918945"
+},
+{
+    "id":"2",
+    "first_name":"Kavya",
+    "last_name":"Malimpati",
+    "type":"personal",
+    "email":"kavya@gmail.com",
+    "gender":"female",
+    "contact_number":"7995738955"
+},
+{
+    "id":"3",
+    "first_name":"Ammesha",
+    "last_name":"teric",
+    "type":"business",
+    "email":"amessha@gmail.com",
+    "gender":"female",
+    "contact_number":"7894561230"
+},
+{
+    "id":"4",
+    "first_name":"safia",
+    "last_name":"teric",
+    "type":"business",
+    "email":"safia@gmail.com",
+    "gender":"female",
+    "contact_number":"7894567230"
+},
+{
+    "id":"5",
+    "first_name":"Aditya",
+    "last_name":"teric",
+    "type":"business",
+    "email":"aditya@gmail.com",
+    "gender":"male",
+    "contact_number":"7894767230"
+},
+{
+    "id":"6",
+    "first_name":"Swetha",
+    "last_name":"teric",
+    "type":"personal",
+    "email":"swetha@gmail.com",
+    "gender":"female",
+    "contact_number":"7894777230"
+},
+{
+    "id":"7",
+    "first_name":"Anudeep",
+    "last_name":"teric",
+    "type":"business",
+    "email":"anudeep@gmail.com",
+    "gender":"male",
+    "contact_number":"7874777230"
+},
+{
+    "id":"8",
+    "first_name":"Sai",
+    "last_name":"Kiran",
+    "type":"personal",
+    "email":"saikiran@gmail.com",
+    "gender":"male",
+    "contact_number":"7871777230"
+},
+{
+    "id":"9",
+    "first_name":"Sai",
+    "last_name":"kumar",
+    "type":"business",
+    "email":"saikumar@gmail.com",
+    "gender":"male",
+    "contact_number":"8871777230"
+},
+{
+    "id":"10",
+    "first_name":"Sai",
+    "last_name":"krishna",
+    "type":"personal",
+    "email":"saikrishna@gmail.com",
+    "gender":"male",
+    "contact_number":"8881777230"
+},
+{
+    "id":"11",
+    "first_name":"Sai",
+    "last_name":"nidi",
+    "type":"business",
+    "email":"sainidi@gmail.com",
+    "gender":"male",
+    "contact_number":"8878777230"
+},
+{
+    "id":"12",
+    "first_name":"Sai",
+    "last_name":"nishitha",
+    "type":"business",
+    "email":"sainishitha@gmail.com",
+    "gender":"female",
+    "contact_number":"8871778230"
+},
+{
+    "id":"13",
+    "first_name":"Mahitha",
+    "last_name":"sai",
+    "type":"business",
+    "email":"mahitha@gmail.com",
+    "gender":"female",
+    "contact_number":"8971778230"
+},
+{
+    "id":"14",
+    "first_name":"Tejaswini",
+    "last_name":"sai",
+    "type":"personal",
+    "email":"tejaswini@gmail.com",
+    "gender":"female",
+    "contact_number":"8981778230"
+},
+{
+    "id":"15",
+    "first_name":"Charan",
+    "last_name":"sai",
+    "type":"personal",
+    "email":"charan@gmail.com",
+    "gender":"female",
+    "contact_number":"8981778830"
+},
+{
+    "id":"16",
+    "first_name":"Papa",
+    "last_name":"rao",
+    "type":"personal",
+    "email":"pappy@gmail.com",
+    "gender":"male",
+    "contact_number":"8911778830"
+},
+{
+    "id":"17",
+    "first_name":"Pessara",
+    "last_name":"Harshitha",
+    "type":"business",
+    "email":"sheelu@gmail.com",
+    "gender":"female",
+    "contact_number":"9111778830"
+},
+{
+    "id":"18",
+    "first_name":"Swathi",
+    "last_name":"Priyanka",
+    "type":"personal",
+    "email":"swathi@gmail.com",
+    "gender":"female",
+    "contact_number":"9101778830"
+}]

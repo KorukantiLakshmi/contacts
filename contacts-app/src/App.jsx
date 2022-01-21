@@ -20,7 +20,7 @@ function App() {
   const [contactList, setContactList] = useState([...data])
   const [genderFilter, setGenderFilter] = useState("all");
   const [editContact, setEditContact] = useState(null);
-  const [search,setSearch] = useState("");
+  const [search, setSearch] = useState("");
 
   const handleChange = (event, newValue) => {
     setContactType(newValue);
@@ -68,8 +68,8 @@ function App() {
     } else {
       if (contactType === "all") {
         array = contactList
-      }else{
-      array = contactList?.filter((item) => item?.type === contactType)
+      } else {
+        array = contactList?.filter((item) => item?.type === contactType)
       }
     }
 
@@ -77,36 +77,44 @@ function App() {
     setGenderFilter(event?.target.value)
   }, [contactList, contactType])
 
-  const handleSearchChange = (event) =>{
+  const handleSearchChange = (event) => {
     setSearch(event?.target?.value)
-    if(event.target.value !== ""){
-    let temp=  detailsList.filter(obj => Object.keys(obj).some(key => obj[key].includes(event?.target.value)));
-    setDetailsList(temp)
-    }else{
+    if (event.target.value !== "") {
+      let array = contactType !== "all" ? contactList.filter((item) => item?.type === contactType) : contactList;
+      let results = [];
+      for (let i = 0; i < array.length; i++) {
+        for (let key in array[i]) {
+          if (array[i][key].indexOf(event?.target?.value) != -1) {
+            results.push(array[i]);
+            break;
+          }
+        }
+      }
+      setDetailsList(results)
+    } else {
       let array = contactType !== "all" ? contactList.filter((item) => item?.type === contactType) : contactList;
       setDetailsList([...array])
     }
   }
 
-  useEffect(()=>{
-   
-  },[search,contactList])
-  console.log(search)
+  useEffect(() => {
+
+  }, [search, contactList])
 
 
   return (
     <div className="App">
       <h1>Contacts List</h1>
       <div className='d-flex'>
-        <input type="text" value={search} onChange={handleSearchChange} placeholder='Enter the search'/>
-      <Button variant="outlined" onClick={handleClickOpen} >Add New</Button>
+        <input type="text" value={search} onChange={handleSearchChange} placeholder='Enter the search' />
+        <Button variant="outlined" onClick={handleClickOpen} >Add New</Button>
       </div>
       <div className='gender-wrapper'>
         <FormControl component="fieldset" >
           <FormLabel component="legend">Gender</FormLabel>
           <RadioGroup aria-label="gender" value={genderFilter} onChange={handleFilterChange}>
             <div className='d-flex'>
-            <FormControlLabel value="female" control={<Radio />} label="Female" />
+              <FormControlLabel value="female" control={<Radio />} label="Female" />
               <FormControlLabel value="male" control={<Radio />} label="Male" />
               <FormControlLabel value="all" control={<Radio />} label="All" />
             </div>
@@ -119,7 +127,7 @@ function App() {
       <Dialog open={openEdit} onClose={handleCloseEdit}>
         <EditContactComponent handleClose={handleCloseEdit} setContactList={setContactList} contactList={contactList} editContact={editContact} />
       </Dialog>
-      <ContactsListComponent detailsList={detailsList}  handleChange={handleChange} handleDelete={handleDelete} handleEditOpen={handleEditOpen} contactType={contactType} />
+      <ContactsListComponent detailsList={detailsList} handleChange={handleChange} handleDelete={handleDelete} handleEditOpen={handleEditOpen} contactType={contactType} />
     </div>
   );
 }
